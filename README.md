@@ -9,6 +9,26 @@ Check out our blog post - [We Don't Run Cron Jobs at Nextdoor](https://engblog.n
 
 **``ndscheduler`` currently supports Python 2 & 3 on Mac OS X / Linux.**
 
+## Setup on Mac/Linux (without docker) with python 3.6
+```
+git clone git@github.com:vinodpandey/ndscheduler.git
+cd ndscheduler
+
+# python 3.7 and above throws exception, so we are using python 3.6
+pyenv local 3.6.6  
+python -m venv .venv
+
+make simple
+
+make run
+
+access: http://localhost:9999
+
+Ctrl + C to stop server
+
+```
+
+
 ## Table of contents
   
   * [Key Abstractions](#key-abstractions)

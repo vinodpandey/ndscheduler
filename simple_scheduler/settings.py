@@ -7,7 +7,7 @@ import logging
 #
 DEBUG = True
 
-HTTP_PORT = 8888
+HTTP_PORT = 9999
 HTTP_ADDRESS = '0.0.0.0'
 
 #

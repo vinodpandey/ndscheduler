@@ -41,6 +41,8 @@ simple:
 
 	# Uninstall ndscheduler, so that simple scheduler can pick up non-package code
 	$(SOURCE_VENV) && $(PIP) uninstall -y ndscheduler || true
+
+run:
 	$(SOURCE_VENV) && \
 		NDSCHEDULER_SETTINGS_MODULE=simple_scheduler.settings PYTHONPATH=.:$(PYTHONPATH) \
 		$(PYTHON) simple_scheduler/scheduler.py
